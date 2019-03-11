@@ -9,13 +9,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const dest = Path.join(__dirname, '../dist');
 
 module.exports = {
-    entry: [
-        '@babel/polyfill',
-        Path.resolve(__dirname, '../src/scripts/index'),
-    ],
+    entry: {
+        app: Path.resolve(__dirname, '../src/scripts/index'),
+        vendors: Path.resolve(__dirname, '../src/scripts/vendors/index'),
+    },
     output: {
         path: dest,
-        filename: 'scripts/bundle.[hash].js'
+        filename: 'scripts/[name].[hash].js'
     },
     plugins: [
         new CleanWebpackPlugin(
