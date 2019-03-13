@@ -22,15 +22,17 @@
 .loop(@from);
 
 .main{
-  width:@platesize+24;
-  margin:0 auto;
+  width:@platesize+84;
+  margin: -110px auto 0;
+  border: 12px solid @background-primary;
+  border-radius: 50%;
 }
 
 .plate{
   background-color: @background-primary;
   width:@platesize;
   height:@platesize;
-  margin:@rimsize*2;
+  margin: 42px;
   border-radius:50%;
   position:relative;
   animation:rotate 24s infinite linear;
