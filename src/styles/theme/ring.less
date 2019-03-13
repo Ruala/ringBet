@@ -119,12 +119,12 @@
   }
   &:after{
     z-index:3;
-    top:24%;
-    right:24%;
-    bottom:24%;
-    left:24%;
-    background-color:darken(@trimSecondary, 45%);
-    border:3px solid darken(@trimSecondary, 25%);
+    top: 60px;
+    right: 60px;
+    bottom:60px;
+    left:60px;
+    background: radial-gradient(#313b6c, #1e2443);
+    border: 5px solid #1b203c;
   }
   &:before{
     top:24%;      // wonky numbers
@@ -136,6 +136,34 @@
     font-size:60px;
     z-index:5;
     border-radius:0;
+  }
+
+  &_2x {
+
+    &:after{
+      background: @color-2x;
+    }
+  }
+
+  &_3x {
+
+    &:after{
+      background: @color-3x;
+    }
+  }
+
+  &_5x {
+
+    &:after{
+      background: @color-5x;
+    }
+  }
+
+  &_50x {
+
+    &:after{
+      background: @color-50x;
+    }
   }
 
   &[data-spinto='1']:before{.spinto(278);}
