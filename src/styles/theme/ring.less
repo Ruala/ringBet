@@ -127,10 +127,10 @@
     border: 5px solid #1b203c;
   }
   &:before{
-    top:24%;      // wonky numbers
-    bottom:21%;   // means a wonky ball path
-    left:24%;
-    right:22%;
+    top:60px;      // wonky numbers
+    bottom:60px;   // means a wonky ball path
+    left:60px;
+    right:60px;
     content:''; // the ball is hidden
     color:#fff;
     font-size:60px;
@@ -232,10 +232,10 @@
 .data{
   display:block;
   position:absolute;
-  top:30%;
-  right:30%;
-  bottom:30%;
-  left:30%;
+  top: 100px;
+  right: 100px;
+  bottom: 100px;
+  left: 100px;
   border-radius:50%;
   animation:rotate 24s reverse linear infinite;
   perspective: 2000px;
@@ -270,11 +270,14 @@
   }
 
   .mask{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #fff;
     font-size: 24px;
     margin: auto;
     line-height: 1.4;
-    padding-top: 36px;
+    padding: 20px;
   }
 
   .result{
