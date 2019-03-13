@@ -93,7 +93,7 @@ $(() => {
     (function () {
         const historyTooltips = new Tooltip({
             parent: document.querySelector('.tm-history '),
-            itemSelector: 'tm-history__item',
+            itemSelector: 'tm-tooltip',
         });
     })();
 });
