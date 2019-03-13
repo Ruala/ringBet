@@ -1,10 +1,10 @@
 
-@platesize:350px; // sets width and height
+@platesize:374px; // sets width and height
 @pitwidth:32px; // the width of each pit. 32 seems to work best
 @rotate:(360/@to)+0deg; // how far to rotate each slice depends on how many slices you have
 
-@rimsize:6px; // size of the bevelled rim edge
-@trim:gold; // or hex value
+@rimsize: 14px; // size of the bevelled rim edge
+@trim: #2a3775; // or hex value
 @trimSecondary:silver; // or hex value
 @spinButton:green; // or hex value
 @resetButton:darkgreen; // or hex value
@@ -27,7 +27,7 @@
 }
 
 .plate{
-  background-color:gray;
+  background-color: @background-primary;
   width:@platesize;
   height:@platesize;
   margin:@rimsize*2;
@@ -48,9 +48,9 @@
     right:-@rimsize;
     bottom:-@rimsize;
     left:-@rimsize;
-    border:@rimsize solid @trim;
-    box-shadow:inset 0px 0px 0px @rimsize/3 darken(@trim, 15%),
-    0px 0px 0px @rimsize/3 lighten(@trim, 25%);
+    /*border:@rimsize solid @trim;*/
+    box-shadow:inset 0px 0px 0px @rimsize @trim,
+    0px 0px 0px @rimsize*2 @global-background;
 
   }
 
@@ -58,10 +58,10 @@
     background:rgba(0,0,0,.65);
     border:1px solid @trimSecondary;
     box-shadow:inset 0px 0px 0px 2px darken(@trimSecondary, 25%);
-    top:12%;
-    left:12%;
-    right:12%;
-    bottom:12%;
+    top: 35px;
+    left: 35px;
+    right: 35px;
+    bottom: 35px;
     z-index:1;
   }
 }
@@ -78,19 +78,24 @@
   background-color:transparent;
   border-left: @pitwidth/2 solid transparent;
   border-right: @pitwidth/2 solid transparent;
-  border-top: @platesize/2 solid black;
+  border-top: @platesize/2 solid @color-3x;
   box-sizing:border-box;
-  &:nth-child(odd){border-top-color:red;}
+
+  &:nth-child(odd){
+    border-top-color: @color-5x;
+  }
+
   &:nth-child(@{to}){
-    border-top-color:green;
+    border-top-color: @color-50x;
   }
 }
 
 .pit{
+  display: none;
   color:#fff;
   padding-top:12px;
   width:@pitwidth;
-  display:inline-block;
+ /* display:inline-block;*/
   font-size:12px;
   transform:scale(1,1.8);
   position:absolute;
@@ -177,40 +182,6 @@
     right:25%;
     bottom:24%;
     left: 25%;
-  }
-}
-
-.btn{
-  background:@spinButton;
-  border:1px solid darken(@spinButton,30%);
-  border-top-color:lighten(@spinButton,10%);
-  border-left-color:lighten(@spinButton,10%);
-  padding:0;
-  margin:0;
-  display:inline-block;
-  font-size:15px;
-  width:@platesize/2;
-  padding:12px;
-  margin:12px;
-  cursor:pointer;
-  color:#fff;
-  font-family: 'Roboto', sans-serif;
-  border-radius:3px;
-  .btn-label{
-    padding:12px;
-    white-space:nowrap;
-  }
-  &.btn-reset{
-    background:@resetButton;
-    border:1px solid darken(@resetButton,30%);
-    border-top-color:lighten(@resetButton,10%);
-    border-left-color:lighten(@resetButton,10%);
-  }
-
-  &.disabled{
-    opacity:.2;
-    transition:opacity .24s linear;
-    cursor:not-allowed;
   }
 }
 
