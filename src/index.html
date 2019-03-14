@@ -16,594 +16,793 @@
 </head>
 <body>
 
-<!--Header-->
-<header class="uk-navbar-container uk-position-relative">
-    <nav uk-navbar>
+<div class="uk-offcanvas-content">
+    <div class="uk-child-width-1-1 uk-height-viewport uk-flex uk-flex-wrap uk-flex-wrap-between">
+        <div>
 
-        <div class="uk-navbar-center">
-            <!--logo-->
-            <a class="uk-navbar-item uk-logo" href="/">
-                Ring<span>Bet</span>
-            </a>
-        </div>
-    </nav>
-</header>
+            <!--Header-->
+            <header class="tm-header uk-navbar-container uk-position-relative">
+                <div class="uk-container">
+                    <nav uk-navbar>
+                        <div class="uk-navbar-left">
 
-<!-- Section -->
-<div class="tm-section-ring uk-section uk-padding-remove-bottom">
-    <div class="uk-container">
-        <div class="tm-game">
-            <div class="tm-game__top">
-                <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small" uk-grid>
-                    <div class="uk-width-expand@m">
-                        <div class="main">
-                            <div class="plate" id="plate">
-                                <ul class="inner">
-                                    <li class="number"><label><input type="radio" name="pit" value="32" /><span class="pit">32</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="15" /><span class="pit">15</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="19" /><span class="pit">19</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="4" /><span class="pit">4</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="21" /><span class="pit">21</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="2" /><span class="pit">2</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="25" /><span class="pit">25</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="17" /><span class="pit">17</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="34" /><span class="pit">34</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="6" /><span class="pit">6</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="27" /><span class="pit">27</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="13" /><span class="pit">13</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="36" /><span class="pit">36</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="11" /><span class="pit">11</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="30" /><span class="pit">30</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="8" /><span class="pit">8</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="23" /><span class="pit">23</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="10" /><span class="pit">10</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="5" /><span class="pit">5</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="24" /><span class="pit">24</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="16" /><span class="pit">16</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="33" /><span class="pit">33</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="1" /><span class="pit">1</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="20" /><span class="pit">20</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="14" /><span class="pit">14</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="31" /><span class="pit">31</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="9" /><span class="pit">9</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="22" /><span class="pit">22</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="18" /><span class="pit">18</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="29" /><span class="pit">29</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="7" /><span class="pit">7</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="28" /><span class="pit">28</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="12" /><span class="pit">12</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="35" /><span class="pit">35</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="3" /><span class="pit">3</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="26" /><span class="pit">26</span></label></li>
-                                    <li class="number"><label><input type="radio" name="pit" value="0" /><span class="pit">0</span></label></li>
+                            <!--mobile menu toggle-->
+                            <a href="#offcanvas-overlay" class="uk-navbar-toggle uk-hidden@m"
+                               uk-navbar-toggle-icon uk-toggle></a>
+
+                            <!--logo-->
+                            <a class="uk-navbar-item uk-logo" href="/">
+                                Tron<span>Ring</span>
+                            </a>
+
+                            <div class="uk-navbar-item uk-visible@s">
+                                <div class="uk-position-relative">
+                                    <div class="tm-dropdown-button">
+                                        <img src="images/flag-en.png" alt="">
+                                        <span>English</span>
+                                    </div>
+                                    <div class="tm-dropdown" uk-dropdown="mode: click">
+                                        <a href="#">
+                                            <img src="images/flag-en.png" alt="">
+                                            <span>English</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/flag-en.png" alt="">
+                                            <span>English</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/flag-en.png" alt="">
+                                            <span>English</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/flag-en.png" alt="">
+                                            <span>English</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/flag-en.png" alt="">
+                                            <span>English</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="images/flag-en.png" alt="">
+                                            <span>English</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--navbar menu-->
+                            <ul class="tm-main-menu uk-navbar-nav uk-margin-left uk-visible@m">
+                                <li class="tm-nav"><a href="#">Smart Contract</a></li>
+                                <li class="tm-nav"><a href="#">Help</a></li>
+                                <li class="tm-nav"><a href="#">About Us</a></li>
+                            </ul>
+
+                        </div>
+
+                        <div class="uk-navbar-right">
+                            <div class="uk-flex uk-flex-middle">
+                                <h4 class="uk-margin-small-right">Share:</h4>
+
+                                <!--navbar menu-->
+                                <ul class="tm-social uk-iconnav">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-vk"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-telegram-plane"></i>
+                                        </a>
+                                    </li>
                                 </ul>
-                                <div class="data">
-                                    <div class="data-inner">
-                                        <div class="mask"></div>
-                                        <div class="result">
-                                            <div class="result-number">00</div>
-                                            <div class="result-color">red</div>
+                            </div>
+
+                        </div>
+                    </nav>
+                </div>
+            </header>
+
+            <div class="tm-cookies">
+                <div class="uk-container">
+                    <div class="uk-flex uk-flex-middle uk-flex-between">
+                        <div class="uk-margin-small-right">
+                            <div class="uk-flex uk-flex-middle">
+                                <i class="tm-cookies__icon fas fa-info-circle uk-margin-small-right"></i>
+                                <span>We use cookies and local storage for better UX (such as your collections), extra powers
+                            for the paid users, analytics, and ads. <a href="#">Privacy Policy</a></span>
+                            </div>
+                        </div>
+
+                        <button class="uk-button uk-button-default">Confirm</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section -->
+            <div class="tm-section-ring uk-section uk-padding-remove-vertical">
+                <div class="uk-container">
+                    <div class="tm-game">
+                        <div class="tm-game__top">
+                            <div class="uk-child-width-expand@s uk-grid-small" uk-grid>
+                                <div class="uk-width-auto@m">
+                                    <div class="main">
+                                        <div class="plate" id="plate">
+                                            <ul class="inner">
+                                                <li class="number"><label><input type="radio" name="pit" value="32" /><span class="pit">32</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="15" /><span class="pit">15</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="19" /><span class="pit">19</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="4" /><span class="pit">4</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="21" /><span class="pit">21</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="2" /><span class="pit">2</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="25" /><span class="pit">25</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="17" /><span class="pit">17</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="34" /><span class="pit">34</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="6" /><span class="pit">6</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="27" /><span class="pit">27</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="13" /><span class="pit">13</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="36" /><span class="pit">36</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="11" /><span class="pit">11</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="30" /><span class="pit">30</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="8" /><span class="pit">8</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="23" /><span class="pit">23</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="10" /><span class="pit">10</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="5" /><span class="pit">5</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="24" /><span class="pit">24</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="16" /><span class="pit">16</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="33" /><span class="pit">33</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="1" /><span class="pit">1</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="20" /><span class="pit">20</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="14" /><span class="pit">14</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="31" /><span class="pit">31</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="9" /><span class="pit">9</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="22" /><span class="pit">22</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="18" /><span class="pit">18</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="29" /><span class="pit">29</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="7" /><span class="pit">7</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="28" /><span class="pit">28</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="12" /><span class="pit">12</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="35" /><span class="pit">35</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="3" /><span class="pit">3</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="26" /><span class="pit">26</span></label></li>
+                                                <li class="number"><label><input type="radio" name="pit" value="0" /><span class="pit">0</span></label></li>
+                                            </ul>
+                                            <div class="data">
+                                                <div class="data-inner">
+                                                    <div class="mask"></div>
+                                                    <div class="result">
+                                                        <div class="result-number">00</div>
+                                                        <div class="result-color">red</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="previous-results">
+                                            <ol class="previous-list">
+                                                <li class='visuallyhidden placeholder'>No results yet.</li>
+                                            </ol>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="previous-results">
-                                <ol class="previous-list">
-                                    <li class='visuallyhidden placeholder'>No results yet.</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="uk-flex-first@m">
-                        <div class="tm-sidebar_left">
-                            <div class="uk-margin">
-                                <h3 class="uk-margin-remove-bottom">Balance:</h3>
-                                <div class="tm-balance">54 654</div>
-                            </div>
+                                <div class="uk-flex-first@m">
+                                    <div class="tm-sidebar_left">
+                                        <div class="uk-margin">
+                                            <h3 class="uk-margin-remove-bottom">Balance:</h3>
+                                            <div class="tm-balance">54 654</div>
+                                        </div>
 
-                            <div class="tm-bet uk-margin">
-                                <h3>Bet:</h3>
-                                <div>
-                                    <button class="tm-button-bet uk-button uk-width-1-1">100</button>
-                                </div>
-                                <div class="uk-flex uk-flex-between">
-                                    <button class="uk-button">x2</button>
-                                    <button class="uk-button">1/2</button>
-                                    <button class="uk-button">Min</button>
-                                    <button class="uk-button">Max</button>
-                                </div>
-                            </div>
+                                        <div class="tm-bet uk-margin">
+                                            <h3>Bet:</h3>
+                                            <div>
+                                                <button class="tm-button-bet uk-button uk-width-1-1">100</button>
+                                            </div>
+                                            <div class="uk-flex uk-flex-between">
+                                                <button class="uk-button">x2</button>
+                                                <button class="uk-button">1/2</button>
+                                                <button class="uk-button">Min</button>
+                                                <button class="uk-button">Max</button>
+                                            </div>
+                                        </div>
 
-                            <div class="tm-auto uk-margin">
-                                <div class="uk-flex uk-flex-between uk-flex-middle">
-                                    <h3>Auto</h3>
-                                    <div class="tm-auto__switcher uk-button-group">
-                                        <button class="tm-switcher uk-active"></button>
+                                        <div class="tm-auto uk-margin">
+                                            <div class="uk-flex uk-flex-between uk-flex-middle">
+                                                <h3>Auto</h3>
+
+                                                <div class="tm-auto__switcher uk-button-group">
+                                                    <button class="tm-switcher uk-active">
+                                                        <span class="on">On</span>
+                                                        <span class="off">Off</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-flex uk-flex-between">
+                                                <button class="tm-button_2x uk-button">2x</button>
+                                                <button class="tm-button_3x uk-button">3x</button>
+                                                <button class="tm-button_5x uk-button">5x</button>
+                                                <button class="tm-button_50x uk-button">50x</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="tm-hash uk-flex uk-margin">
+                                            <h3 class="uk-margin-remove-bottom uk-margin-small-right">Hash:</h3>
+                                            <div>
+                                                <span class="uk-text-muted">4ac703fd1ef02e93e681943ff
+                                                    5231f92f76603bb5f7bf17143f 24ec4cccd9
+                                                </span>
+                                                <i class="fas fa-question-circle uk-text-primary" uk-tooltip="Some info text"></i>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="uk-flex uk-flex-between">
-                                    <button class="tm-button_2x uk-button">2x</button>
-                                    <button class="tm-button_3x uk-button">3x</button>
-                                    <button class="tm-button_5x uk-button">5x</button>
-                                    <button class="tm-button_50x uk-button">50x</button>
+
+                                <div>
+                                    <h3 class="uk-text-right">History</h3>
+                                    <ul class="tm-history uk-list uk-margin-small">
+                                        <li class="tm-history__item tm-history__item_50x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">50x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_5x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">5x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_5x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">5x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_3x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">3x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_5x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">5x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_3x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">3x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_3x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">3x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x"
+                                            data-tooltip="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="tm-game__bottom uk-text-center">
+                            <div class="uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+                                <div>
+                                    <button class="tm-button_2x uk-button uk-width-1-1">2x</button>
+                                    <div class="uk-text-muted">Max: 2400 TRN</div>
+                                </div>
+                                <div>
+                                    <button class="tm-button_3x uk-button uk-width-1-1">3x</button>
+                                    <div class="uk-text-muted">Max: 2400 TRN</div>
+                                </div>
+                                <div>
+                                    <button class="tm-button_5x uk-button uk-width-1-1">5x</button>
+                                    <div class="uk-text-muted">Max: 2400 TRN</div>
+                                </div>
+                                <div>
+                                    <button class="tm-button_50x uk-button uk-width-1-1">50x</button>
+                                    <div class="uk-muted">Max: 2400 TRN</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section -->
+            <div class="uk-section uk-padding-remove-vertical">
+                <div class="uk-container">
+                    <div class="tm-info">
+                        <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small" uk-grid>
+                            <div>
+                                <table class="tm-table tm-table_2x uk-table uk-table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <i class="fas fa-user uk-margin-small-right"></i>
+                                            <span>50</span>
+                                        </th>
+                                        <th class="uk-table-shrink uk-text-nowrap">
+                                            <span>2265</span>
+                                            <span class="uk-text-muted uk-text-uppercase">trn</span>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="tm-table tm-table_3x uk-table uk-table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <i class="fas fa-user uk-margin-small-right"></i>
+                                            <span>50</span>
+                                        </th>
+                                        <th class="uk-table-shrink uk-text-nowrap">
+                                            <span>2265</span>
+                                            <span class="uk-text-muted uk-text-uppercase">trn</span>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="tm-table tm-table_5x uk-table uk-table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <i class="fas fa-user uk-margin-small-right"></i>
+                                            <span>50</span>
+                                        </th>
+                                        <th class="uk-table-shrink uk-text-nowrap">
+                                            <span>2265</span>
+                                            <span class="uk-text-muted uk-text-uppercase">trn</span>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div>
+                                <table class="tm-table tm-table_50x uk-table uk-table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <i class="fas fa-user uk-margin-small-right"></i>
+                                            <span>50</span>
+                                        </th>
+                                        <th class="uk-table-shrink uk-text-nowrap">
+                                            <span>2265</span>
+                                            <span class="uk-text-muted uk-text-uppercase">trn</span>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="uk-text-truncate">TLWd3....asdcB</td>
+                                        <td>200</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </div>
                     </div>
 
-                    <div>
-                        <h3 class="uk-text-right">History</h3>
-                        <ul class="tm-history uk-list uk-margin-small">
-                            <li class="tm-history__item tm-history__item_50x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">50x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_5x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">5x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_5x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">5x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_3x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">3x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_5x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">5x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_3x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">3x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_3x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">3x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
-                            <li class="tm-history__item tm-history__item_2x"
-                                data-tooltip="<div class='tm-history__tooltip'>
-                <h5>Hash:</h5>
-                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
-                <h5>Salt:</h5>
-                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
-                <h5>Random:</h5>
-                <div>712</div>
-            </div>">
-                                <span class="tm-history__progress"></span>
-                                <span class="tm-history__number">2x</span>
-                            </li>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <footer class="tm-background-tertiary">
+            <div class="uk-container">
+                <nav class="uk-flex uk-flex-middle uk-flex-between@s uk-flex-center uk-flex-wrap">
+                    <div class="uk-width-auto uk-margin-small">
+                        <!--logo-->
+                        <a class="uk-navbar-item uk-logo" href="/">Coin<span>Lottery</span></a>
+                    </div>
+
+                    <div class="uk-flex uk-flex-wrap uk-flex-middle uk-flex-center uk-width-expand@s uk-margin-small" uk-margin>
+                        <div class="uk-width-auto">
+                            <h5>Реферальная ссылка</h5>
+                        </div>
+                        <div class="uk-margin-small-left uk-margin-small-right uk-width-auto">
+                            <input class="tm-input-footer" type="text" value="https://www.google.com/search?safe1321321321" readonly>
+                        </div>
+                        <div class="uk-width-auto">
+                            <button class="tm-button-footer uk-button uk-button-default">Копировать</button>
+                        </div>
+                    </div>
+
+                    <div class="uk-width-auto uk-margin-small">
+
+                        <!--navbar menu-->
+                        <ul class="tm-social uk-navbar-nav">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
                         </ul>
-                    </div>
-                </div>
-            </div>
 
-            <div class="tm-game__bottom uk-text-center">
-                <div class="uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
-                    <div>
-                        <button class="tm-button_2x uk-button uk-width-1-1">2x</button>
-                        <div class="uk-text-muted">Max: 2400 TRN</div>
                     </div>
-                    <div>
-                        <button class="tm-button_3x uk-button uk-width-1-1">3x</button>
-                        <div class="uk-text-muted">Max: 2400 TRN</div>
-                    </div>
-                    <div>
-                        <button class="tm-button_5x uk-button uk-width-1-1">5x</button>
-                        <div class="uk-text-muted">Max: 2400 TRN</div>
-                    </div>
-                    <div>
-                        <button class="tm-button_50x uk-button uk-width-1-1">50x</button>
-                        <div class="uk-muted">Max: 2400 TRN</div>
-                    </div>
-
-                </div>
+                </nav>
             </div>
-        </div>
+        </footer>
     </div>
-</div>
 
-<!-- Section -->
-<div class="uk-section uk-padding-remove-vertical">
-    <div class="uk-container">
-        <div class="tm-info">
-            <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small" uk-grid>
-                <div>
-                    <table class="tm-table tm-table_2x uk-table uk-table-striped">
-                        <thead>
-                        <tr>
-                            <th>
-                                <i class="fas fa-user uk-margin-small-right"></i>
-                                <span>50</span>
-                            </th>
-                            <th class="uk-table-shrink uk-text-nowrap">
-                                <span>2265</span>
-                                <span class="uk-text-muted uk-text-uppercase">trn</span>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        </tbody>
-                    </table>
+    <!-- Off-canvas -->
+    <div id="offcanvas-overlay" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+            <div class="uk-card uk-flex uk-flex-column uk-flex-center">
+
+                <ul class="uk-nav">
+                    <!--<li class="tm-nav"><a href="#">Все игры</a></li>-->
+                    <!--<li class="tm-nav"><a href="#">Мои игры</a></li>-->
+                    <li class="tm-nav"><a href="#">Смартконтакт</a></li>
+                    <li class="tm-nav"><a href="https://www.youtube.com">Видеоинструкция</a></li>
+                </ul>
+
+                <div class="uk-hidden@s uk-nav uk-margin-small">
+                    <div class="tm-dropdown-button"><img src="images/flag-ru.png" alt=""></div>
+                    <div class="tm-dropdown" uk-dropdown="mode: click">
+                        <a href="#"><img src="images/flag-ru.png" alt=""></a>
+                        <a href="#"><img src="images/flag-ru.png" alt=""></a>
+                    </div>
                 </div>
-                <div>
-                    <table class="tm-table tm-table_3x uk-table uk-table-striped">
-                        <thead>
-                        <tr>
-                            <th>
-                                <i class="fas fa-user uk-margin-small-right"></i>
-                                <span>50</span>
-                            </th>
-                            <th class="uk-table-shrink uk-text-nowrap">
-                                <span>2265</span>
-                                <span class="uk-text-muted uk-text-uppercase">trn</span>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div>
-                    <table class="tm-table tm-table_5x uk-table uk-table-striped">
-                        <thead>
-                        <tr>
-                            <th>
-                                <i class="fas fa-user uk-margin-small-right"></i>
-                                <span>50</span>
-                            </th>
-                            <th class="uk-table-shrink uk-text-nowrap">
-                                <span>2265</span>
-                                <span class="uk-text-muted uk-text-uppercase">trn</span>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div>
-                    <table class="tm-table tm-table_50x uk-table uk-table-striped">
-                        <thead>
-                        <tr>
-                            <th>
-                                <i class="fas fa-user uk-margin-small-right"></i>
-                                <span>50</span>
-                            </th>
-                            <th class="uk-table-shrink uk-text-nowrap">
-                                <span>2265</span>
-                                <span class="uk-text-muted uk-text-uppercase">trn</span>
-                            </th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        <tr>
-                            <td class="uk-text-truncate">TLWd3....asdcB</td>
-                            <td>200</td>
-                        </tr>
-                        </tbody>
-                    </table>
+                <div class="uk-hidden@s uk-nav">
+                    <div class="tm-button-group uk-button-group">
+                        <button class="uk-active">
+                            <i class="fa fa-moon-o"></i>
+                        </button>
+                        <button>
+                            <i class="tm-la fa fa-sun-o"></i>
+                        </button>
+                    </div>
                 </div>
 
             </div>
         </div>
-
     </div>
+
 </div>
+
+
 
 </body>
 </html>
