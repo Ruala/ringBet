@@ -73,8 +73,8 @@
                             <!--navbar menu-->
                             <ul class="tm-main-menu uk-navbar-nav uk-margin-left uk-visible@m">
                                 <li class="tm-nav"><a href="#">Smart Contract</a></li>
-                                <li class="tm-nav"><a href="#">Help</a></li>
-                                <li class="tm-nav"><a href="#">About Us</a></li>
+                                <li class="tm-nav"><a href="#modal-tron" uk-toggle>Help</a></li>
+                                <li class="tm-nav"><a href="#modal-about" uk-toggle>About Us</a></li>
                             </ul>
 
                         </div>
@@ -762,6 +762,56 @@
                 </nav>
             </div>
         </footer>
+    </div>
+
+    <!-- This is the modal tron -->
+    <div id="modal-tron" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="tm-modal-logo uk-modal-title">Tron<span>Link</span></h2>
+            </div>
+
+            <div class="uk-modal-body">
+                <p>Пожалуйста, войдите в свой кошелек TRONLink. Если вы не установили TRONLink кошелек, пожалуйста,
+                    посетите http://u6.gg/gmc5D и скачать Chrome расширение. (TRONbet доступен только с помощью браузера
+                    Chrome на данный момент)
+                </p>
+            </div>
+
+            <div class="uk-modal-footer">
+                <button class="uk-button uk-button-primary" type="button">Установить TRONlink</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is the modal about -->
+    <div id="modal-about" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-default uk-close-large" type="button" uk-close></button>
+            <div class="uk-modal-header">
+                <h2 class="uk-modal-title">About Us</h2>
+            </div>
+
+            <div class="uk-modal-body">
+                <p>If you reside in a location where lottery, gambling, or betting over the internet is illegal, please
+                    do not click on anything related to these activities on this site. You must be 21 years of age to
+                    click on any gambling related items even if it is legal to do so in your location. Recognising that
+                    the laws and regulations involving online gaming are different everywhere, players are advised to
+                    check with the laws that exist within their own jurisdiction or region to ascertain the legality of
+                    the activities which are covered.
+                </p>
+                <p>The games provided by TRONbet are based on blockchain, fair, and transparency. When you start playing
+                    these games, please take note that online gambling and lottery is an entertainment vehicle and that
+                    it carries with it a certain degree of financial risk.
+                </p>
+                <p class="uk-text-bold">Players should be aware of these risks and govern themselves accordingly.</p>
+            </div>
+
+            <div class="uk-modal-footer">
+                <button class="uk-button uk-button-primary" type="button">Confirm</button>
+            </div>
+        </div>
     </div>
 
     <!-- Off-canvas -->
