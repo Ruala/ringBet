@@ -699,14 +699,22 @@ html {
 
 // Tooltip
 
-.tm-tooltip {
+.jTooltip-inner {
   position: fixed;
   max-width: 200px;
   text-align: center;
   padding: 10px 15px;
   border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   word-wrap: break-word;
+
+  h5 {
+    margin: 0;
+  }
+}
+
+.jTooltip-arrow {
+  border-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 639px) {
