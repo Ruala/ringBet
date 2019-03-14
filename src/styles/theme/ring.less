@@ -1,6 +1,6 @@
 
 @platesize:374px; // sets width and height
-@pitwidth:32px; // the width of each pit. 32 seems to work best
+@pitwidth:22px; // the width of each pit. 32 seems to work best
 @rotate:(360/@to)+0deg; // how far to rotate each slice depends on how many slices you have
 
 @rimsize: 14px; // size of the bevelled rim edge
@@ -12,7 +12,7 @@
 @spins:8; // the number of laps the ball spins before resting
 
 @from: 1;
-@to: 37; // number of slices (36 numbers plus zero)
+@to: 54; // number of slices (36 numbers plus zero)
 .loop(@index) when(@index < @to) {
   .number:nth-child(@{index}) {
     transform:rotateZ(@rotate*@index);
@@ -80,16 +80,24 @@
   background-color:transparent;
   border-left: @pitwidth/2 solid transparent;
   border-right: @pitwidth/2 solid transparent;
-  border-top: @platesize/2 solid @color-3x;
+  border-top: @platesize/2 solid @color-2x;
   box-sizing:border-box;
+}
 
-  &:nth-child(odd){
-    border-top-color: @color-5x;
-  }
+.number_2x {
+  border-top-color: @color-2x;
+}
 
-  &:nth-child(@{to}){
-    border-top-color: @color-50x;
-  }
+.number_3x {
+  border-top-color: @color-3x;
+}
+
+.number_5x {
+  border-top-color: @color-5x;
+}
+
+.number_50x {
+  border-top-color: @color-50x;
 }
 
 .pit{
@@ -276,7 +284,7 @@
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 24px;
+    font-size: 20px;
     margin: auto;
     line-height: 1.4;
     padding: 10px;

@@ -12,19 +12,32 @@ $(() => {
             $reset = $('#reset'),
             $data = $('.data'),
             $mask = $('.mask'),
-            maskDefault = 'Place Your Bets',
+            maskDefault = `
+                <div>
+                    <div class="tm-countdown uk-flex uk-flex-middle" uk-countdown="date: 2019-03-21T12:23:45+00:00">
+                        <div>
+                            <div class="uk-countdown-number uk-countdown-minutes"></div>
+                        </div>
+                        <div class="uk-countdown-separator">:</div>
+                        <div>
+                            <div class="uk-countdown-number uk-countdown-seconds"></div>
+                        </div>
+                    </div>
+                    <div class="">place bets</div>
+                </div>
+            `,
             timer = 9000;
 
         var red = [32,19,21,25,34,27,36,30,23,5,16,1,14,9,18,7,12,3];
 
         $reset.hide();
 
-        $mask.text(maskDefault);
+        $mask.html(maskDefault);
 
         $spin.on('click',function(){
 
             // get a random number between 0 and 36 and apply it to the nth-child selector
-            var  randomNumber = Math.floor(Math.random() * 36),
+            var  randomNumber = Math.floor(Math.random() * 56),
                 color = null;
             $inner.attr('data-spinto', randomNumber).find('li:nth-child('+ randomNumber +') input').prop('checked','checked');
             // prevent repeated clicks on the spin button by hiding it
