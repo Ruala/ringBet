@@ -1,0 +1,78 @@
+/* jTooltip */
+
+.jTooltip {
+  position: absolute;
+  z-index: 100000;
+  padding: 5px;
+  font-size: 11px;
+}
+.jTooltip-inner {
+  max-width: 200px;
+  padding: 6px 15px 6px 15px;
+  text-align: center;
+  border-radius: 3px;
+}
+.jTooltip-arrow {
+  display: block;
+  position: absolute;
+  border: 5px solid transparent;
+}
+
+.jTooltip-b .jTooltip-arrow {
+  top: -5px;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-left-color: transparent !important;
+}
+.jTooltip-t .jTooltip-arrow {
+  bottom: -5px;
+  border-right-color: transparent !important;
+  border-left-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+.jTooltip-l .jTooltip-arrow {
+  right: -5px;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+.jTooltip-r .jTooltip-arrow {
+  left: -5px;
+  border-top-color: transparent !important;
+  border-left-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+
+.js__jTooltip-s_white {
+
+  .jTooltip-inner {
+    color: #000;
+    background-color: #fff;
+    box-shadow: 0 3px 13px rgba(0, 0, 0, 0.25);
+  }
+  .jTooltip-arrow {
+    border-color: #fff;
+  }
+}
+
+.js__jTooltip-s_grey {
+
+  .jTooltip-inner {
+    color: #000;
+    background-color: #999db0;
+  }
+  .jTooltip-arrow {
+    border-color: #999db0;
+  }
+}
+
+.js__jTooltip-s_dark {
+
+  .jTooltip-inner {
+    color: #999db0;
+    background-color: #000;
+  }
+  .jTooltip-arrow {
+    border-color: #000;
+  }
+}
