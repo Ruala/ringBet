@@ -202,7 +202,8 @@ html {
     transform: translateY(-50%);
     width: 19px;
     height: 22px;
-    background: url("../../images/icon_balance.png");
+    background: url("../../images/icon_balance.png") no-repeat;
+    background-size: contain;
   }
 }
 
@@ -646,8 +647,6 @@ html {
   }
 }
 
-
-
 .tm-hash {
   font-size: 13px;
 
@@ -905,6 +904,15 @@ html {
 
 @media (max-width: 959px) {
 
+  html {
+    background: @background-primary;
+  }
+
+  .uk-h3, h3 {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
   .uk-logo {
     padding: 0;
     font-size: 18px;
@@ -955,18 +963,155 @@ html {
       }
     }
   }
-}
 
-
-@media (max-width: 639px) {
+  .tm-header {
+    height: 32px;
+    box-sizing: border-box;
+  }
 
   .tm-game__top {
-    padding: 40px 15px;
+    height: calc(100vh - 32px - 58px);
+    padding: 10px 0 0;
+    box-sizing: border-box;
+  }
+
+  .tm-balance {
+    padding-left: 20px;
+    font-size: 14px;
+
+    &::before {
+      width: 15px;
+      height: 17px;
+    }
+  }
+
+  .tm-sidebar_left {
+    width: 150px;
+  }
+
+  .tm-bet {
+    width: 102px;
+
+    .tm-input-bet {
+      width: 102px;
+      height: 32px;
+      font-size: 17px;
+    }
+
+    .uk-button {
+      padding: 0 4px;
+      font-size: 10px;
+      line-height: 17px;
+    }
+  }
+
+  .tm-auto {
+    width: 102px;
+
+    .uk-button {
+      width: 25px;
+      height: 25px;
+      font-size: 10px;
+      line-height: 12px;
+      border-width: 2px;
+    }
+  }
+
+  .tm-hash__text {
+    display: flex;
+    align-items: flex-end;
+
+    > span {
+      display: block;
+      max-height: 40px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    svg {
+      margin-bottom: 5px;
+    }
+  }
+
+  .tm-countdown {
+    width: 72px;
+  }
+
+  .uk-countdown-number,
+  .uk-countdown-separator{
+    font-size: 24px;
+  }
+
+  .uk-countdown-number, .uk-countdown-separator {
+    line-height: 50px;
+  }
+
+  .tm-history {
+
+    &__number {
+      width: 20px;
+      font-size: 9px;
+      line-height: 10px;
+    }
+
+    &__progress {
+      height: 3px;
+      border-radius: 1px;
+    }
+
+    &__item {
+
+      &_2x {
+
+        .tm-history__progress {
+          width: 23px;
+        }
+      }
+
+      &_3x {
+
+        .tm-history__progress {
+          width: 33px;
+        }
+      }
+
+      &_5x {
+
+        .tm-history__progress {
+          width: 53px;
+        }
+      }
+
+      &_50x {
+
+        .tm-history__progress {
+          width: 73px;
+        }
+      }
+    }
   }
 
   .tm-game__bottom {
-    padding: 20px 15px;
+    height: 58px;
+    box-sizing: border-box;
+    padding: 14px;
+    margin-left: -15px;
+    margin-right: -15px;
+    border-radius: 0;
+
+    .uk-button {
+      margin-bottom: 0;
+      line-height: 26px;
+      font-size: 17px;
+    }
+
+    .uk-grid {
+      margin-left: -10px;
+
+      > * {
+        padding-left: 10px;
+      }
+    }
   }
 }
-
 

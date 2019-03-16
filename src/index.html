@@ -381,8 +381,65 @@
                 <div class="uk-container">
                     <div class="tm-game">
                         <div class="tm-game__top">
-                            <div class="uk-child-width-expand@s uk-grid-small" uk-grid>
-                                <div class="uk-width-auto@m">
+                            <div class="uk-child-width-expand uk-grid-small" uk-grid>
+                                <div class="uk-width-auto uk-width-expand@m">
+                                    <div class="tm-sidebar_left">
+                                        <div class="uk-child-width-expand uk-child-width-1-1@m uk-grid-collapse uk-margin" uk-grid>
+                                            <div>
+                                                <h3 class="uk-margin-remove-bottom">Balance:</h3>
+                                            </div>
+                                            <div>
+                                                <div class="tm-balance">54 654</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tm-bet uk-margin">
+                                            <h3>Bet:</h3>
+                                            <div>
+                                                <input class="tm-input-bet uk-input" type="text" placeholder="100">
+                                            </div>
+                                            <div class="uk-flex uk-flex-between">
+                                                <button class="uk-button">x2</button>
+                                                <button class="uk-button">1/2</button>
+                                                <button class="uk-button">Min</button>
+                                                <button class="uk-button">Max</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="tm-auto uk-margin">
+                                            <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-bottom">
+                                                <h3>Auto</h3>
+
+                                                <div class="tm-auto__switcher uk-button-group">
+                                                    <button class="tm-switcher uk-active">
+                                                        <span class="on">On</span>
+                                                        <span class="off">Off</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+                                            <div class="uk-flex uk-flex-between">
+                                                <button class="tm-button_2x uk-button">2x</button>
+                                                <button class="tm-button_3x uk-button">3x</button>
+                                                <button class="tm-button_5x uk-button">5x</button>
+                                                <button class="tm-button_50x uk-button">50x</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="tm-hash uk-flex uk-margin uk-visible@m">
+                                            <h3 class="uk-margin-remove-bottom uk-margin-small-right">Hash:</h3>
+                                            <div class="tm-hash__text">
+                                                <span class="uk-text-muted">4ac703fd1ef02e93e681943ff
+                                                    5231f92f76603bb5f7bf17143f 24ec4cccd9
+                                                </span>
+                                                <i class="fas fa-question-circle uk-text-primary" uk-tooltip="Some info text"></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="uk-width-auto">
                                     <div class="main">
                                         <div class="plate" id="plate">
                                             <ul class="inner">
@@ -470,61 +527,9 @@
                                     </div>
                                 </div>
 
-                                <div class="uk-flex-first@m">
-                                    <div class="tm-sidebar_left">
-                                        <div class="uk-margin">
-                                            <h3 class="uk-margin-remove-bottom">Balance:</h3>
-                                            <div class="tm-balance">54 654</div>
-                                        </div>
-
-                                        <div class="tm-bet uk-margin">
-                                            <h3>Bet:</h3>
-                                            <div>
-                                                <input class="tm-input-bet uk-input" type="text" placeholder="100">
-                                            </div>
-                                            <div class="uk-flex uk-flex-between">
-                                                <button class="uk-button">x2</button>
-                                                <button class="uk-button">1/2</button>
-                                                <button class="uk-button">Min</button>
-                                                <button class="uk-button">Max</button>
-                                            </div>
-                                        </div>
-
-                                        <div class="tm-auto uk-margin">
-                                            <div class="uk-flex uk-flex-between uk-flex-middle uk-margin-small-bottom">
-                                                <h3>Auto</h3>
-
-                                                <div class="tm-auto__switcher uk-button-group">
-                                                    <button class="tm-switcher uk-active">
-                                                        <span class="on">On</span>
-                                                        <span class="off">Off</span>
-                                                    </button>
-                                                </div>
-                                            </div>
-
-                                            <div class="uk-flex uk-flex-between">
-                                                <button class="tm-button_2x uk-button">2x</button>
-                                                <button class="tm-button_3x uk-button">3x</button>
-                                                <button class="tm-button_5x uk-button">5x</button>
-                                                <button class="tm-button_50x uk-button">50x</button>
-                                            </div>
-                                        </div>
-
-                                        <div class="tm-hash uk-flex uk-margin">
-                                            <h3 class="uk-margin-remove-bottom uk-margin-small-right">Hash:</h3>
-                                            <div class="tm-hash__text">
-                                                <span class="uk-text-muted">4ac703fd1ef02e93e681943ff
-                                                    5231f92f76603bb5f7bf17143f 24ec4cccd9
-                                                </span>
-                                                <i class="fas fa-question-circle uk-text-primary" uk-tooltip="Some info text"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div>
                                     <h3 class="uk-text-right">History</h3>
-                                    <ul class="tm-history uk-list uk-margin-small">
+                                    <ul class="tm-history uk-list uk-margin-small uk-visible@m">
                                         <li class="tm-history__item tm-history__item_50x js__jTooltip"
                                             data-jTooltip-content="<div class='tm-history__tooltip'>
                 <h5>Hash:</h5>
@@ -754,27 +759,173 @@
                                             <span class="tm-history__number">2x</span>
                                         </li>
                                     </ul>
+
+                                    <ul class="tm-history uk-list uk-margin-small uk-margin-remove-top uk-hidden@m">
+                                        <li class="tm-history__item tm-history__item_50x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">50x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_5x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">5x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_3x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">3x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_3x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">3x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_5x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">5x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_3x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">3x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_3x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">3x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_5x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">5x</span>
+                                        </li>
+                                        <li class="tm-history__item tm-history__item_2x js__jTooltip"
+                                            data-jTooltip-content="<div class='tm-history__tooltip'>
+                <h5>Hash:</h5>
+                <div>1ddd903c6292a8f86205e42cf827fc6b91560eb2d855f7cd6ff113ac4e98ca1c</div>
+                <h5>Salt:</h5>
+                <div>7787ad2be71fea1fsyLYPGS9tFyTlLmy</div>
+                <h5>Random:</h5>
+                <div>712</div>
+            </div>">
+                                            <span class="tm-history__progress"></span>
+                                            <span class="tm-history__number">2x</span>
+                                        </li>
+                                    </ul>
+
+                                    <div class="tm-hash uk-margin-small uk-hidden@m">
+                                        <h3 class="uk-text-right">Hash:</h3>
+                                        <div class="tm-hash__text">
+                                                <span class="uk-text-muted">4ac703fd1ef02e93e681943ff
+                                                    5231f92f76603bb5f7bf17143f 24ec4cccd9
+                                                </span>
+                                            <i class="fas fa-question-circle uk-text-primary" uk-tooltip="Some info text"></i>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
 
                         <div class="tm-game__bottom uk-text-center">
-                            <div class="uk-child-width-1-2@s uk-child-width-1-4@m" uk-grid>
+                            <div class="uk-child-width-1-4" uk-grid>
                                 <div>
                                     <button class="tm-button_2x uk-button uk-width-1-1">2x</button>
-                                    <div class="uk-text-muted">Max: 2400 TRN</div>
+                                    <div class="uk-text-muted uk-visible@m">Max: 2400 TRN</div>
                                 </div>
                                 <div>
                                     <button class="tm-button_3x uk-button uk-width-1-1">3x</button>
-                                    <div class="uk-text-muted">Max: 2400 TRN</div>
+                                    <div class="uk-text-muted uk-visible@m">Max: 2400 TRN</div>
                                 </div>
                                 <div>
                                     <button class="tm-button_5x uk-button uk-width-1-1">5x</button>
-                                    <div class="uk-text-muted">Max: 2400 TRN</div>
+                                    <div class="uk-text-muted uk-visible@m">Max: 2400 TRN</div>
                                 </div>
                                 <div>
                                     <button class="tm-button_50x uk-button uk-width-1-1">50x</button>
-                                    <div class="uk-muted">Max: 2400 TRN</div>
+                                    <div class="uk-muted uk-visible@m">Max: 2400 TRN</div>
                                 </div>
 
                             </div>
@@ -784,7 +935,7 @@
             </div>
 
             <!-- Section -->
-            <div class="uk-section uk-padding-remove-vertical">
+            <div class="uk-section uk-padding-remove-vertical uk-visible@m">
                 <div class="uk-container">
                     <div class="tm-info">
                         <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-grid-small" uk-grid>
@@ -998,7 +1149,7 @@
         </div>
 
         <!--Footer-->
-        <footer class="tm-footer">
+        <footer class="tm-footer uk-visible@m">
             <div class="uk-container">
                 <nav class="uk-flex uk-flex-middle uk-flex-between@s uk-flex-center uk-flex-wrap">
                     <div class="uk-width-auto">
