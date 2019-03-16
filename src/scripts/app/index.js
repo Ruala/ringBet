@@ -1,7 +1,6 @@
 import Hammer from 'hammerjs';
 
 import './jTootip';
-import Tooltip from './tooltip';
 
 $(() => {
     //ring
