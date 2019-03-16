@@ -192,6 +192,7 @@ html {
   position: relative;
   padding-left: 30px;
   font-size: 20px;
+  white-space: nowrap;
 
   &::before {
     content: '';
@@ -872,6 +873,12 @@ html {
   }
 }
 
+.tm-loading {
+  font-size: 20px;
+}
+
+
+
 // Tooltip
 
 .jTooltip-inner {
@@ -920,6 +927,12 @@ html {
 
   .uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
     min-height: 32px;
+  }
+
+  .tm-cookies {
+    display: none;
+    position: fixed;
+    top: 32px;
   }
 
   .tm-dropdown,
@@ -975,8 +988,13 @@ html {
     box-sizing: border-box;
   }
 
+  .tm-balance-wrap {
+    margin-right: -50px;
+  }
+
   .tm-balance {
     padding-left: 20px;
+    margin-left: 10px;
     font-size: 14px;
 
     &::before {
@@ -986,7 +1004,11 @@ html {
   }
 
   .tm-sidebar_left {
-    width: 150px;
+    width: 100px;
+  }
+
+  .tm-sidebar_right {
+    max-width: 100px;
   }
 
   .tm-bet {
@@ -1115,3 +1137,24 @@ html {
   }
 }
 
+@media (max-width: 479px) {
+
+  .tm-visible\@xs {
+    display: none !important;
+  }
+
+  .uk-navbar-container:not(.uk-navbar-transparent) {
+    background: @background-primary;
+  }
+
+  .tm-game__top {
+    height: calc(100vh - 32px);
+  }
+}
+
+@media (min-width: 480px) {
+
+  .tm-hidden\@xs {
+    display: none !important;
+  }
+}

@@ -13,16 +13,23 @@ $(() => {
             $mask = $('.mask'),
             maskDefault = `
                 <div>
-                    <div class="tm-countdown uk-flex uk-flex-middle" uk-countdown="date: 2019-03-21T12:23:45+00:00">
-                        <div>
-                            <div class="uk-countdown-number uk-countdown-minutes"></div>
+                    <div class="tm-visible\@xs">
+                        <div class="tm-countdown uk-flex uk-flex-middle" uk-countdown="date: 2019-03-21T12:23:45+00:00">
+                            <div>
+                                <div class="uk-countdown-number uk-countdown-minutes"></div>
+                            </div>
+                            <div class="uk-countdown-separator">:</div>
+                            <div>
+                                <div class="uk-countdown-number uk-countdown-seconds"></div>
+                            </div>
                         </div>
-                        <div class="uk-countdown-separator">:</div>
-                        <div>
-                            <div class="uk-countdown-number uk-countdown-seconds"></div>
-                        </div>
+                        <div class="">place bets</div>
                     </div>
-                    <div class="">place bets</div>
+                    <div class="tm-hidden@xs">
+                        <a class="uk-logo" href="/">
+                            Tron<span>Ring</span>
+                        </a>
+                    </div>
                 </div>
             `,
             timer = 9000;
