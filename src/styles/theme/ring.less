@@ -273,84 +273,29 @@
     bottom:0;
     left:0;
     position: absolute;
-    backface-visibility: hidden;
     border-radius:50%;
     overflow:hidden;
-    display:inline-block;
-  }
-
-  .mask{
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 20px;
-    margin: auto;
-    line-height: 1.4;
     padding: 10px;
   }
 
-  .result{
-    background-color: green;
-    color: white;
-    transform: rotateY(180deg);
-    align-items:center;
-    color:#fff;
+  .mask {
+    font-size: 20px;
+    line-height: 1.4;
   }
 
-  .result-number{
-    font-size:72px;
-    font-weight:500;
-    line-height:1.2;
-    margin-top:12px;
-  }
-
-  .result-color{
-    text-transform:uppercase;
-    font-size:21px;
-    line-height:1;
+  .result-number {
+    font-size: 72px;
+    font-weight:600;
   }
 
   .uk-logo {
     font-size: 16px;
   }
 }
-
-.previous-results{
-  display: none;
-  max-width:@platesize;
-  margin:24px 12px;
-}
-
-.previous-list{
-  perspective:2000;
-}
-
-.previous-result{
-  display:flex;
-  margin:1px;
-  padding:12px;
-  color:#fff;
-  &:first-child{
-    animation:flipin .48s ease-out;
-  }
-  .previous-number{
-    flex:1;
-  }
-}
-.color-green{background-color:green;}
-.color-black{background-color:black;}
-.color-red{background-color:red;}
-
-.visuallyhidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
-}
-
-
 
 
 @keyframes flipin{
